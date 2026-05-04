@@ -8,15 +8,21 @@ Francisco García
 
 ## Descripción del proyecto
 
-Este proyecto implementa en Python el método de **búsqueda por funciones de hash**.
+Este proyecto implementa en Python el algoritmo **Búsqueda por Funciones de Hash**, correspondiente al tema **6.3 Búsqueda por funciones de HASH**.
 
-El programa lee un archivo llamado `datos.txt`, el cual contiene números enteros. Después ordena los datos, construye una tabla hash y permite buscar un número introducido por el usuario.
+El programa trabaja con un archivo llamado `datos.txt`, el cual contiene números enteros. El código se encarga de leer los datos, ordenarlos, construir una tabla hash y permitir que el usuario busque un número ingresado desde la terminal.
 
-También mide el tiempo que tarda la búsqueda en milisegundos y muestra si el número fue encontrado o no.
+Además, el programa mide el tiempo que tarda la búsqueda en milisegundos, con el objetivo de analizar la eficiencia del método.
 
 ---
 
-## Archivos del proyecto
+## Objetivo
+
+El objetivo principal de este proyecto es demostrar cómo funciona la búsqueda por funciones hash y comprobar su eficiencia al buscar un número dentro de un conjunto de datos grande, en este caso un archivo con aproximadamente 50,000 números.
+
+---
+
+## Archivos del repositorio
 
 ```text
 Busqueda-Hash-Benchmark/
