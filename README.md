@@ -1,4 +1,4 @@
-# Búsqueda por Funciones Hash Benchmark
+# Búsqueda por Funciones Hash
 
 ## Autor
 
