@@ -1,33 +1,37 @@
-# Búsqueda por Funciones Hash
+# Búsqueda por Funciones Hash Benchmark
 
 ## Autor
 
-Francisco García
+Francisco Gonzalo García Kumul
 
 ---
 
-## Descripción del proyecto
+## Código con comentarios claros
 
-Este proyecto implementa en Python el algoritmo **Búsqueda por Funciones de Hash**, correspondiente al tema **6.3 Búsqueda por funciones de HASH**.
+El proyecto incluye un archivo principal llamado `main.py`, donde se implementa la búsqueda por funciones hash en Python.
 
-El programa trabaja con un archivo llamado `datos.txt`, el cual contiene números enteros. El código se encarga de leer los datos, ordenarlos, construir una tabla hash y permitir que el usuario busque un número ingresado desde la terminal.
+El código está dividido en funciones para que sea más fácil de entender:
 
-Además, el programa mide el tiempo que tarda la búsqueda en milisegundos, con el objetivo de analizar la eficiencia del método.
+| Función | Descripción |
+|---|---|
+| `leer_numeros()` | Lee el archivo `datos.txt` y convierte su contenido en una lista de números enteros. |
+| `esta_ordenada()` | Verifica que la lista de números esté ordenada correctamente. |
+| `guardar_resultado()` | Guarda los números ordenados en el archivo `datos_ordenados.txt`. |
+| `funcion_hash()` | Calcula la clave hash usando el operador módulo. |
+| `construir_tabla_hash()` | Crea la tabla hash e inserta los números en sus cubetas correspondientes. |
+| `buscar_en_hash()` | Busca el número ingresado por el usuario dentro de la tabla hash. |
+| `pedir_numero()` | Solicita al usuario el número que desea buscar. |
+| `main()` | Controla la ejecución general del programa. |
+
+El código contiene comentarios en las partes importantes para explicar la lectura del archivo, el ordenamiento, la construcción de la tabla hash, el manejo de colisiones y la medición del tiempo.
 
 ---
 
-## Objetivo
+## Análisis de complejidad
 
-El objetivo principal de este proyecto es demostrar cómo funciona la búsqueda por funciones hash y comprobar su eficiencia al buscar un número dentro de un conjunto de datos grande, en este caso un archivo con aproximadamente 50,000 números.
+La búsqueda por funciones hash utiliza una función para calcular la posición donde debería encontrarse un dato.
 
----
-
-## Archivos del repositorio
+En este programa se utiliza la siguiente función hash:
 
 ```text
-Busqueda-Hash-Benchmark/
-│
-├── main.py
-├── datos.txt
-├── datos_ordenados.txt
-└── README.md
+clave = numero % tamanio_tabla
