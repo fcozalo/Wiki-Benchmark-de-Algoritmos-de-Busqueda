@@ -1,4 +1,4 @@
-# Wiki-Benchmark de Algoritmos de Búsqueda: Búsqueda por Funciones Hash
+# Búsqueda por Funciones Hash
 
 ## Autor
 
