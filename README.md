@@ -8,30 +8,37 @@ Francisco Gonzalo García Kumul
 
 ## Código con comentarios claros
 
-El proyecto incluye un archivo principal llamado `main.py`, donde se implementa la búsqueda por funciones hash en Python.
+El repositorio contiene el archivo `main.py`, donde se implementa el algoritmo de **búsqueda por funciones hash** en Python.
 
-El código está dividido en funciones para que sea más fácil de entender:
+El código está organizado por funciones y contiene comentarios para explicar las partes principales del programa, como la lectura del archivo, el ordenamiento de los datos, la construcción de la tabla hash, la función hash utilizada, el manejo de colisiones y la medición del tiempo de búsqueda.
+
+Las funciones principales del código son:
 
 | Función | Descripción |
 |---|---|
 | `leer_numeros()` | Lee el archivo `datos.txt` y convierte su contenido en una lista de números enteros. |
-| `esta_ordenada()` | Verifica que la lista de números esté ordenada correctamente. |
+| `esta_ordenada()` | Verifica que los números hayan quedado ordenados correctamente. |
 | `guardar_resultado()` | Guarda los números ordenados en el archivo `datos_ordenados.txt`. |
-| `funcion_hash()` | Calcula la clave hash usando el operador módulo. |
-| `construir_tabla_hash()` | Crea la tabla hash e inserta los números en sus cubetas correspondientes. |
+| `funcion_hash()` | Calcula la clave hash de cada número usando el operador módulo. |
+| `construir_tabla_hash()` | Construye la tabla hash e inserta los números en sus cubetas correspondientes. |
 | `buscar_en_hash()` | Busca el número ingresado por el usuario dentro de la tabla hash. |
 | `pedir_numero()` | Solicita al usuario el número que desea buscar. |
 | `main()` | Controla la ejecución general del programa. |
 
-El código contiene comentarios en las partes importantes para explicar la lectura del archivo, el ordenamiento, la construcción de la tabla hash, el manejo de colisiones y la medición del tiempo.
+El programa realiza los siguientes pasos:
 
----
+1. Lee el archivo `datos.txt`.
+2. Convierte los datos en una lista de números enteros.
+3. Ordena los números de menor a mayor.
+4. Verifica que la lista esté correctamente ordenada.
+5. Guarda la lista ordenada en `datos_ordenados.txt`.
+6. Construye una tabla hash.
+7. Solicita al usuario un número para buscar.
+8. Busca el número usando la función hash.
+9. Mide el tiempo de búsqueda en milisegundos.
+10. Muestra si el número fue encontrado o no.
 
-## Análisis de complejidad
-
-La búsqueda por funciones hash utiliza una función para calcular la posición donde debería encontrarse un dato.
-
-En este programa se utiliza la siguiente función hash:
+La función hash utilizada en el código es:
 
 ```text
 clave = numero % tamanio_tabla
